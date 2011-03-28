@@ -1,7 +1,9 @@
 var app = require('express').createServer(),
     request = require('request'),
-    twitter = require('twitter');
+    twitter = require('twitter'),
+    quotes = require('./lib/twitter');
 var twit = new twitter();
+var Quotes = new quotes.twitter(twit);
 
 
 /*
@@ -23,10 +25,6 @@ var twit = new twitter();
 
 app.get('/', function(req, res){
 
-  twit.search('OH OR #OH', function(data) {
-    console.log(data);
-    res.send(data);
-  });
 });
 
 app.listen(3000);
