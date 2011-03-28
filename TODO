@@ -1,3 +1,11 @@
 known issues:
     * set of stores tweets grows without bound
     * stars and random need to be implemented
+    * using "since_id" to query search doesn't do what we think it does. Since
+        results are not in chronological order, grabbing the last id comes from
+        an arbitrary time. We should probably use 'since', and record the date
+        from the last query.
+        * Using since can raise a 403/404
+        * keeping a running list of "Latest" tweets as they come in doesn't do
+            what we want it to, as explained above. consider searching with
+            result_type set to "recent".
