@@ -24,7 +24,11 @@ var twit = new twitter();
 */
 
 app.get('/', function(req, res){
+    Quotes.getLatest(10, function(latest) {
+      console.log(latest);
+    });
 
 });
 
+setTimeout(function() {Quotes._update()}, 5 * 1000);
 app.listen(3000);
