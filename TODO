@@ -1,0 +1,3 @@
+known issues:
+    * set of stores tweets grows without bound
+    * stars and random need to be implemented
