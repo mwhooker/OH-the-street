@@ -30,5 +30,6 @@ app.get('/', function(req, res){
 
 });
 
-setTimeout(function() {Quotes._update()}, 5 * 1000);
+// Every 10 seconds, poll for new tweets
+setInterval(function() {Quotes._update()}, 10 * 1000);
 app.listen(3000);
