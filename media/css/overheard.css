@@ -1,0 +1,65 @@
+body {
+    text-align: center;
+    font-family: helvetica, arial, serif;
+}
+
+header {
+    float: left;
+    width: 100%;
+    background-color: #242927;
+}
+
+header h1 {
+    float: left;
+    font-family: "Cabin Sketch", arial, serif;
+    font-size: 300%;
+    color: #dfd8bf;
+    margin: 10px 15px;
+}
+
+header ul {
+    float: right;
+    list-style-type: none;
+    margin: 25px;
+}
+
+header li {
+    display: inline;
+    font-size: 120%;
+    margin-left: 10px;
+}
+
+header a {
+    color: #dfd8bf;
+}
+
+div.quotes {
+    clear: both;
+    width: 60%;
+    margin: 0px auto;
+    padding: 20px 0;
+    text-align: left;
+}
+
+div.quotes h2 {
+    font-size: 200%;
+}
+
+div.quotes blockquote {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+div.quotes cite {
+    display: block;
+    margin-top: 10px;
+    color: #777;
+}
+
+footer {
+    background-color: #242927;
+    color: #dfd8bf;
+    padding: 20px;
+}
