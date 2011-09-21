@@ -9,3 +9,6 @@ known issues:
         * keeping a running list of "Latest" tweets as they come in doesn't do
             what we want it to, as explained above. consider searching with
             result_type set to "recent".
+            * However, this is the same problem because
+    * duplicate tweets making in to "latest" index unless search returns newer
+        entries
